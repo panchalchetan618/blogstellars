@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    background-color: transparent;
+    width: 5px;
+    padding: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #bbb;
+    border-radius: 5px;
+    margin: 1px;
+    transition: 0.5s all ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: #aaa;
+}
+
+.hljs {
+    background-color: #2d2d2d; /* Background color for code blocks */
+    color: #f8f8f2; /* Text color for code blocks */
+    padding: 1rem; /* Padding inside code blocks */
+    border-radius: 0.5rem; /* Rounded corners */
+    overflow-x: auto; /* Horizontal scroll for long code */
+}
+
+.hljs pre {
+    max-height: 500px; /* Maximum height for code blocks */
+    overflow-y: auto; /* Vertical scroll for long code */
+}
+
+.copy-button {
+    /* Custom styles for the copy button */
+    background-color: #4a5568; /* Tailwind bg-gray-700 */
+    color: #ffffff; /* Tailwind text-white */
+    padding: 0.25rem 0.5rem; /* Tailwind py-1 px-2 */
+    border-radius: 0.25rem; /* Tailwind rounded */
+}
+
